@@ -1,3 +1,5 @@
+# Image-to-LaTeX
+
 - This project is still a work in progress
 - Language: Armenian
 
@@ -7,10 +9,13 @@
 - [Methods](#Methods)
 - [Results](#Results)
 - [Setup](#Setup)
+- [Preprocessing](#Preprocessing)
+- [Training](#Training)
+- [Tracking ](#Tracking)
+- [Testing](#Testing)
 - [Deployment](#Deployment)
 - [Armenian](#Armenian)
 
-# Image-to-LaTeX
 
 An application that maps an image of a LaTeX math equation to LaTeX code.
 
