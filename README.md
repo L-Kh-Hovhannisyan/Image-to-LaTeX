@@ -9,12 +9,12 @@
 - [Methods](#Methods)
 - [Results](#Results)
 - [Setup](#Setup)
-- [Preprocessing](#Preprocessing)
-- [Training](#Training)
-- [Tracking ](#Tracking)
-- [Testing](#Testing)
+- [Data Preprocessing](#Preprocessing)
+- [Model Training](#Training)
+- [Experiment Tracking ](#Tracking)
+- [Testing and Continuous Integration](#Testing)
 - [Deployment](#Deployment)
-- [Armenian](#Armenian)
+- [Review in Armenian](#Armenian)
 
 
 An application that maps an image of a LaTeX math equation to LaTeX code.
@@ -69,7 +69,9 @@ make venv
 make install-dev
 ```
 
-### Data Preprocessing
+### Preprocessing
+
+- Data Preprocessing
 
 Run the following command to download the im2latex-100k dataset and do all the preprocessing. (The image cropping step may take over an hour.)
 
@@ -77,7 +79,7 @@ Run the following command to download the im2latex-100k dataset and do all the p
 python scripts/prepare_data.py
 ```
 
-### Model Training and Experiment Tracking
+### Training 
 
 #### Model Training
 
@@ -89,11 +91,13 @@ python scripts/run_experiment.py trainer.gpus=1 data.batch_size=32
 
 Configurations can be modified in `conf/config.yaml` or in command line. See [Hydra's documentation](https://hydra.cc/docs/intro) to learn more.
 
-#### Experiment Tracking 
+#### Tracking 
 
 If you want to try my [best run]( https://drive.google.com/file/d/1DOU13cBWbybExJIQSWA6jV7N6Q5Oqgw0/view?usp=sharing) please,download checkpoint, create `artifacts` directorty under the project directory and past pt. model here.
 
-### Testing and Continuous Integration
+### Testing 
+
+- Testing and Continuous Integration
 
 The following tools are used to lint the codebase:
 
@@ -149,6 +153,7 @@ I think I should have defined the scope of the project better:
 These questions should be used to guide the data cleaning process.
 
 - The model performacne is not as good as I want to be, but I hope the lessons I learned from this project are useful to someone wants to tackle similar problems in the future.
+- Please, if you notice any bug, inform me by following email!
 
 ## Հայերեն
 
@@ -190,7 +195,6 @@ https://arxiv.org/pdf/2103.06450.pdf
 - Տարբեր տվյալների հավաքածուները հասանելի են այստեղ՝ http://lstm.seas.harvard.edu/latex/data/
 - Հարվարդի հոդվածը՝ https://arxiv.org/pdf/1609.04938v1.pdf
 - Մեկ այլ օգտակար հոդված՝ https://arxiv.org/pdf/2103.06450.pdf
-
 
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/kingyiusuen/image-to-latex/blob/main/.pre-commit-config.yaml)
 [![License](https://img.shields.io/github/license/kingyiusuen/image-to-latex)](https://github.com/kingyiusuen/image-to-latex/blob/main/LICENSE)
