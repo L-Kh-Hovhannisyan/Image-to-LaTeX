@@ -14,7 +14,7 @@
 - [Experiment Tracking ](#Tracking)
 - [Testing and Continuous Integration](#Testing)
 - [Deployment](#Deployment)
-- [Review in Armenian](#Armenian)
+- [Review in Armenian](#Հայերեն)
 
 
 An application that maps an image of a LaTeX math equation to LaTeX code.
