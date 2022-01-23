@@ -1,5 +1,16 @@
-# Image-to-LaTeX
+- This project is still a work in progress
+- Language: Armenian
 
+### Table of Contents
+
+- [Introduction](#Introduction)
+- [Methods](#Methods)
+- [Results](#Results)
+- [Setup](#Setup)
+- [Deployment](#Deployment)
+- [Armenian](#Armenian)
+
+# Image-to-LaTeX
 
 An application that maps an image of a LaTeX math equation to LaTeX code.
 
@@ -73,23 +84,9 @@ python scripts/run_experiment.py trainer.gpus=1 data.batch_size=32
 
 Configurations can be modified in `conf/config.yaml` or in command line. See [Hydra's documentation](https://hydra.cc/docs/intro) to learn more.
 
-#### Experiment Tracking using Weights & Biases
+#### Experiment Tracking 
 
-The best model checkpoint will be uploaded to Weights & Biases (W&B) automatically (you will be asked to register or login to W&B before the training starts). Here is an example command to download a trained model checkpoint from W&B:
-
-```
-python scripts/download_checkpoint.py RUN_PATH
-```
-
-Replace RUN_PATH with the path of your run. The run path should be in the format of `<entity>/<project>/<run_id>`. To find the run path for a particular experiment run, go to the Overview tab in the dashboard.
-
-For example, you can use the following command to download my best run
-
-```
-python scripts/download_checkpoint.py kingyiusuen/image-to-latex/1w1abmg1
-```
-
-The checkpoint will be downloaded to a folder named `artifacts` under the project directory.
+If you want to try my [best run]( https://drive.google.com/file/d/1DOU13cBWbybExJIQSWA6jV7N6Q5Oqgw0/view?usp=sharing) please,download checkpoint, create `artifacts` directorty under the project directory and past pt. model here.
 
 ### Testing and Continuous Integration
 
